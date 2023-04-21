@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+body{
+  font-family: Libre Baskerville;
+  padding: 20px;
+  background-color: #DAE2B6;
+  color: #285430;
+}
+
+#img-div{
+    width: 60%;
+}
+
+#img-caption{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#image{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: #263A29;
+}
+
+.achievement{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card{
+  padding: 10px;
+  border-radius:10px;
+  background-color: #285430;
+  color:  #DAE2B6; 
+  margin: 10px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .achievement{
+  grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media only screen and (max-width: 600px) {
+    .achievement{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #img-div{
+        width: 100%;
+    }
+}
